@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/home/bridgeit/AtomFiles/bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-app="myApp" ng-controller="controller">
+
+<button ng-click="orderByElement('number')">Number</button>
+<button ng-click="orderByElement('string')">String</button>
+
+<ul>
+  <li ng-repeat="a in elements | orderBy:order">
+    {{a.number+"  "+a.string}}</li>
+</ul>
+
+<script type="text/javascript">
+  var app=angular.module("myApp",[]);
+  app.controller("controller",function($scope)
+{
+  $scope.elements=[
+    {number:1,string:"d"},
+    {number:3,string:"b"},
+    {number:4,string:"c"},
+    {number:2,string:"a"}
+  ],
+  $scope.orderByElement=function(a)
+  {
+    $scope.order=a;
+  }
+});
+</script>
+  </body>
+</html>

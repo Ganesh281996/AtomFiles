@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/home/bridgeit/AtomFiles/bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">
+
+{{name}}
+
+<ul>
+  <li ng-repeat="x in age">
+    {{ x + ', ' + x.Country }}
+  </li>
+</ul>
+
+<p ng-repeat="x in age">{{x.DoctorName}}</p>
+{{age.DoctorName}}
+    <script type="text/javascript">
+      var app=angular.module("myApp",[]);
+
+      app.controller("myCtrl",function($scope,$http)
+    {
+      $scope.name="sgd";
+      $http.get("Doctor.json").then(function (response)
+    {
+      $scope.age=response.data;
+    })
+  });
+    </script>
+  </body>
+</html>
