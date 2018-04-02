@@ -1,0 +1,129 @@
+<div layout="row" layout-xs="column">
+  <div flex>
+    I'm above on mobile, and to the left on larger devices.
+  </div>
+  <div flex>
+    I'm below on mobile, and to the right on larger devices.
+  </div>
+</div>
+
+<div layout="row" layout-align="center center">
+  <div>one</div>
+  <div>two</div>
+  <div>three</div>
+</div>
+
+
+<md-autocomplete md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+  <md-item-template>
+    <span md-highlight-text="searchText">{{item.display}}</span>
+  </md-item-template>
+  <md-not-found>
+    No matches found.
+  </md-not-found>
+</md-autocomplete>
+
+
+<md-dialog>
+  <form>
+    <md-input-container>
+      <label for="testInput">Label</label>
+      <input id="testInput" type="text" md-autofocus>
+    </md-input-container>
+  </form>
+</md-dialog>
+
+
+<md-button class="md-primary">Primary Button</md-button>
+<md-button class="md-accent md-raised">Raised and Accent Button</md-button>
+<md-button class="md-no-focus">No Focus Style</md-button>
+<md-button> Flat Button </md-button>
+<md-button>
+  <md-icon md-svg-src="your/icon.svg"></md-icon>
+  Register Now
+</md-button>
+<md-button class="md-fab" aria-label="FAB">
+  <md-icon md-svg-src="your/icon.svg"></md-icon>
+</md-button>
+<!-- mini-FAB -->
+<md-button class="md-fab md-mini" aria-label="Mini FAB">
+  <md-icon md-svg-src="your/icon.svg"></md-icon>
+</md-button>
+<!-- Button with SVG Icon -->
+<md-button class="md-icon-button" aria-label="Custom Icon Button">
+  <md-icon md-svg-icon="path/to/your.svg"></md-icon>
+</md-button>
+
+
+<md-calendar ng-model="birthday"></md-calendar>
+
+
+<md-card md-colors="::{background: '{{theme}}-primary-700'}">
+ <img src="card-image.png" class="md-card-image" alt="image caption">
+ <md-card-content>
+   <h2>Card headline</h2>
+   <p>Card content</p>
+ </md-card-content>
+ <md-card-footer>
+   Card footer
+ </md-card-footer>
+</md-card>
+
+
+
+
+<md-card >
+  <md-card-header>
+    <md-card-avatar>
+      <img class="md-user-avatar" src="avatar.png">
+    </md-card-avatar>
+    <md-card-header-text>
+      <span class="md-title">Title</span>
+      <span class="md-subhead">Sub header</span>
+    </md-card-header-text>
+  </md-card-header>
+  <img ng-src="card-image.png" class="md-card-image" alt="image caption">
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">Card headline</span>
+      <span class="md-subhead">Card subheader</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-actions layout="row" layout-align="start center">
+    <md-button>Action 1</md-button>
+    <md-button>Action 2</md-button>
+    <md-card-icon-actions>
+      <md-button class="md-icon-button" aria-label="icon">
+        <md-icon md-svg-icon="icon"></md-icon>
+      </md-button>
+    </md-card-icon-actions>
+  </md-card-actions>
+  <md-card-content>
+    <p>
+     Card content
+    </p>
+  </md-card-content>
+</md-card>
+
+
+
+<md-checkbox ng-model="isChecked" aria-label="Finished?">
+  Finished ?
+</md-checkbox>
+
+<md-checkbox md-no-ink ng-model="hasInk" aria-label="No Ink Effects">
+  No Ink Effects
+</md-checkbox>
+
+<md-checkbox ng-disabled="true" ng-model="isDisabled" aria-label="Disabled">
+  Disabled
+</md-checkbox>
+
+
+<md-chip>{{$chip}}</md-chip>
+
+<div md-colors="{background: 'myTheme-accent-900-0.43'}">
+  <div md-colors="{color: 'red-A100', 'border-color': 'primary-600'}">
+    <span>Color demo</span>
+  </div>
+</div>
