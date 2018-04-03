@@ -1,20 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Login</title>
-  </head>
-  <body >
-    <div layout="">
-
-    <form layout="column" flex-order>
-      <p layout="row" flex="10">Name : <input type="text" ng-model="name1"></p>
-      <p layout="row" flex="10">Password : <input type="text" ng-model="password1"></p>
+<div>
+    <form >
+      Name : <input type="text" ng-model="name1">
+      Password : <input type="text" ng-model="password1">
       <button type="button" ng-click="login(name1,password1)">Submit</button>
       <a ui-sref="register">Register</a>
     </form>
     {{name1 +"   "+password1}}
     <h1 ng-bind="result"></h1>
 </div>
-  </body>
-</html>
+
+
+<div layout="column" style="height:300px;  border:double; border-color:purple" layout-align="center center">
+
+<div >Login Form</div>
+<!-- <div style="border:double; border-color:purple"> -->
+<form layout="column" style="border:double; border-color:purple">
+<div layout="row"><div flex="30">Name:</div><div><input type="text" ng-model="name1"></div></div>
+<div layout="row"><div flex="30">Password:</div><div><input type="text" ng-model="password1"></div></div>
+<div layout="row">
+  <div class="" flex="30"><button type="button" ng-click="login(name1,password1)">Submit</button></div>
+  <div class=""><a ui-sref="register">Register</a></div>
+</div>
+</form>
+<!-- </div> -->
+
+</div>

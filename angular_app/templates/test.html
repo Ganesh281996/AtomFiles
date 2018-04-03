@@ -1,18 +1,80 @@
-<div layout="row" layout-xs="column">
-  <div flex>
+
+<div ng-controller="BottomSheetExample" class="md-padding" ng-cloak>
+  <h2 class="md-title">Usage</h2>
+  <p>Bottom sheets can be displayed by clicking one of the buttons below.  Once shown, it can be
+  dismissed by either swiping down or clicking in the shaded area.</p>
+  <h2 class="md-title">Actions</h2>
+  <p>Use one of the following buttons to display a bottom sheet.</p>
+  <div class="bottom-sheet-demo inset" layout="row" layout-sm="column" layout-align="center" >
+    <md-button flex="50" class="md-primary md-raised" ng-click="showListBottomSheet()">Show as List</md-button>
+    <md-button flex="50" class="md-primary md-raised" ng-click="showGridBottomSheet()">Show as Grid</md-button>
+  </div>
+
+  <div ng-if="alert">
+    <br/>
+    <b layout="row" layout-align="center center" class="md-padding">
+      {{alert}}
+    </b>
+  </div>
+</div>
+
+
+
+
+
+<div layout="row" layout-margin style="border: double;border-color: purple;">
+  <div flex>Parent layout and this element have margins.</div>
+</div>
+<div layout="row" layout-padding style="border: double;border-color: purple;">
+  <div flex>Parent layout and this element have padding.</div>
+</div>
+<div layout="row" layout-fill style="min-height: 224px;border: double;border-color: purple;">
+  <div flex>Parent layout is set to fill available space.</div>
+</div>
+<div layout="row" layout-padding layout-margin layout-fill style="min-height: 224px;border: double;border-color: purple;">
+  <div flex>I am using all three at once.</div>
+</div>
+
+<div layout="column" style="border: double;border-color: purple;">
+
+<div layout="row" style="border: double; border-width: 5px;border-color: blue;height:100px;" layout-align="center">
+  <div style="border: double; border-width: 20px;border-color: green;" layout-align="start">
     I'm above on mobile, and to the left on larger devices.
   </div>
-  <div flex>
+  <div style="border: double; border-width: 20px;border-color: red;" layout-align="end">
     I'm below on mobile, and to the right on larger devices.
   </div>
 </div>
 
-<div layout="row" layout-align="center center">
+<div layout="row" style="border: double;border-color: blue;height:100px;">
+  <div flex="20" style="border: double; border-color: green;">
+    [flex="20"]
+  </div>
+  <div flex="70" style="border: double; border-color: red;">
+    [flex="70"]
+  </div>
+  <div flex style="border: double; border-color:black;">
+    [flex]
+  </div>
+</div>
+
+</div>
+
+<div layout="row" style="border: double;border-color: blue;height:100px;">
+  <div flex="66" flex-offset="15">
+    [flex-offset="15"]
+    [flex="66"]
+  </div>
+  <div flex>
+    [flex]
+  </div>
+</div>
+
+<div layout="column" layout-align="center center">
   <div>one</div>
   <div>two</div>
   <div>three</div>
 </div>
-
 
 <md-autocomplete md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
   <md-item-template>
@@ -127,3 +189,69 @@
     <span>Color demo</span>
   </div>
 </div>
+
+
+<md-dialog aria-label="List dialog">
+  <md-dialog-content>
+    <md-list>
+      <md-list-item ng-repeat="item in items">
+        <p>Number {{item}}</p>
+      </md-list-item>
+    </md-list>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <md-button ng-click="closeDialog()" class="md-primary">Close Dialog</md-button>
+  </md-dialog-actions>
+</md-dialog>
+
+
+<md-menu>
+ <!-- Trigger element is a md-button with an icon -->
+ <md-button ng-click="$mdMenu.open($event)" class="md-icon-button" aria-label="Open sample menu">
+   <md-icon md-svg-icon="call:phone"></md-icon>
+ </md-button>
+ <md-menu-content>
+   <md-menu-item><md-button ng-click="doSomething()">Do Something</md-button></md-menu-item>
+ </md-menu-content>
+</md-menu>
+
+
+<md-menu-bar>
+  <md-menu>
+    <button ng-click="$mdMenu.open()">
+      File
+    </button>
+    <md-menu-content>
+      <md-menu-item>
+        <md-button ng-click="ctrl.sampleAction('share', $event)">
+          Share...
+        </md-button>
+      </md-menu-item>
+      <md-menu-divider></md-menu-divider>
+      <md-menu-item>
+      <md-menu-item>
+        <md-menu>
+          <md-button ng-click="$mdMenu.open()">New</md-button>
+          <md-menu-content>
+            <md-menu-item><md-button ng-click="ctrl.sampleAction('New Document', $event)">Document</md-button></md-menu-item>
+            <md-menu-item><md-button ng-click="ctrl.sampleAction('New Spreadsheet', $event)">Spreadsheet</md-button></md-menu-item>
+            <md-menu-item><md-button ng-click="ctrl.sampleAction('New Presentation', $event)">Presentation</md-button></md-menu-item>
+            <md-menu-item><md-button ng-click="ctrl.sampleAction('New Form', $event)">Form</md-button></md-menu-item>
+            <md-menu-item><md-button ng-click="ctrl.sampleAction('New Drawing', $event)">Drawing</md-button></md-menu-item>
+          </md-menu-content>
+        </md-menu>
+      </md-menu-item>
+    </md-menu-item></md-menu-content>
+  </md-menu>
+</md-menu-bar>
+
+
+<md-radio-group ng-model="selected">
+
+  <md-radio-button ng-repeat="d in colorOptions" ng-value="d.value" aria-label="{{ d.label }}">
+
+         {{ d.label }}
+
+  </md-radio-button>
+
+</md-radio-group>
