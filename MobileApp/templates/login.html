@@ -1,0 +1,68 @@
+<!--
+<div layout="column" layout-align="center center" style="height:676px;background-color:;">
+<span><h3>Login Form</h3></span>
+
+<form ng-submit="dashboard" layout="column" style="border:double;border-color:red;background-color:;">
+  <md-input-container>
+    <label>Username</label>
+    <input>
+  </md-input-container>
+    <md-input-container>
+      <label>Password</label>
+      <input>
+    </md-input-container>
+
+<md-button type="submit">Submit</md-button>
+</form>
+
+</div> -->
+
+<!-- <md-card layout="column" layout-align="center center">
+  <md-card-header center>
+<md-card-header-text>
+  Login Form
+</md-card-header-text>
+</md-card-header>
+  <form ng-submit="dashboard" layout="column" style="border:double;border-color:red;background-color:;">
+    <md-input-container>
+      <label>Username</label>
+      <input>
+    </md-input-container>
+      <md-input-container>
+        <label>Password</label>
+        <input>
+      </md-input-container>
+
+  <md-button type="submit">Submit</md-button>
+  </form>
+</md-card> -->
+
+
+
+
+
+<md-content  layout="row" layout-align="center center">
+      <md-card class="loginContent" flex="flex" flex-gt-sm="50" flex-gt-md="33">
+
+        <md-toolbar>
+          <div class="loginTool">
+            Login Form
+          </div>
+        </md-toolbar>
+
+        <md-card-content>
+          <form layout="column">
+            <md-input-container >
+              <label>Login</label>
+              <input ng-model="userName" type="text" name="email">
+            </md-input-container>
+            <md-input-container>
+              <label>Password</label>
+              <input ng-model="password" type="password" name="password">
+            </md-input-container>
+            <md-button ng-click="link(userName,password)" class="md-raised md-primary">Login</md-button>
+          </form>
+        </md-card-content>
+
+      </md-card>
+</md-content>

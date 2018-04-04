@@ -1,0 +1,22 @@
+{
+  "name": "MobileApp",
+  "homepage": "https://github.com/Ganeshxyz/Ganesh",
+  "authors": [
+    "Ganesh <ganeshxxyyzz@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.8",
+    "angular-ui-router": "^1.0.15",
+    "angular": "^1.6.9"
+  }
+}
