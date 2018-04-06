@@ -10,10 +10,15 @@ $stateProvider
   templateUrl:"templates/login.html",
   controller:"loginCtrl"
 })
-.state("dashboard",{
+.state("home",{
+  url:"/home",
+  templateUrl:"templates/home.html",
+  controller:"homeCtrl"
+})
+.state("home.dashboard",{
   url:"/dashboard",
   templateUrl:"templates/dashboard.html",
-  params:"user",
+  params:{"Username":null,"Password":null},
   controller:"dashboardCtrl"
 });
 

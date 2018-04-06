@@ -1,1 +1,25 @@
-{{user}}
+<div layout="row"  >
+
+<div  layout="row" layout-wrap>
+  <md-card ng-repeat="x in json" style="height:650px;width:400px;background-color:#bde9ef;" flex="30">
+    <md-card-title>
+      <div class="md-toolbar-tools loginTool">
+        {{x.id+"  "}}{{" "+x.name}}
+      </div>
+    </md-card-title>
+      <md-card-content layout="column" >
+<ul>
+  <li>{{"Price : "+x.price}}</li>
+  <li>{{"OS : "+x.specs.os}}</li>
+  <li>{{"Rating : "+x.rating}}</li>
+  <li>{{"Storage : "+x.specs.storage}}</li>
+
+  <img style="height:400px;width:250px;" src={{x.image.small}} class="md-card-image" alt="image caption">
+
+  <md-button class="md-primary md-raised">Buy Now</md-button>
+</ul>
+      </md-card-content>
+    </md-card>
+</div>
+
+</div>

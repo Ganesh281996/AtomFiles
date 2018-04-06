@@ -9,11 +9,11 @@
       "os": "Android",
       "camera": 15
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Sony Xperia Z3 is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
+      "small": "images/sony-xperia-z3.jpg",
+      "large": "images/sony-xperia-z3-large.jpg"
     }
   },
   {
@@ -26,11 +26,11 @@
       "os": "iOS",
       "camera": 8
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Iphone 6 is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/iphone6.jpg",
-      "large": "assets/images/iphone6-large.jpg"
+      "small": "images/iphone6.jpg",
+      "large": "images/iphone6-large.jpg"
     }
   },
   {
@@ -43,11 +43,11 @@
       "os": "Android",
       "camera": 5
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "HTC One M8 is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/htc-one.jpg",
-      "large": "assets/images/htc-one-large.jpg"
+      "small": "images/htc-one.jpg",
+      "large": "images/htc-one-large.jpg"
     }
   },
   {
@@ -60,11 +60,11 @@
       "os": "Android",
       "camera": 12
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Galaxy Alpha is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/galaxy-alpha.jpg",
-      "large": "assets/images/galaxy-alpha-large.jpg"
+      "small": "images/galaxy-alpha.jpg",
+      "large": "images/galaxy-alpha-large.jpg"
     }
   },
   {
@@ -77,11 +77,11 @@
       "os": "Windows",
       "camera": 5
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Nokia Lumia is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/nokia-lumia.jpg",
-      "large": "assets/images/nokia-lumia-large.jpg"
+      "small": "images/nokia-lumia.jpg",
+      "large": "images/nokia-lumia-large.jpg"
     }
   },
   {
@@ -94,11 +94,11 @@
       "os": "Android",
       "camera": 12
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Zte Nubia is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/zte-nubia.jpg",
-      "large": "assets/images/zte-nubia-large.jpg"
+      "small": "images/zte-nubia.jpg",
+      "large": "images/zte-nubia-large.jpg"
     }
   },
   {
@@ -111,11 +111,11 @@
       "os": "Android",
       "camera": 15
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Samsung Galaxy S5 is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/galaxy-s5.jpg",
-      "large": "assets/images/galaxy-s5-large.jpg"
+      "small": "images/galaxy-s5.jpg",
+      "large": "images/galaxy-s5-large.jpg"
     }
   },
   {
@@ -128,11 +128,11 @@
       "os": "iOS",
       "camera": 8
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Iphone 5S is bad mobile dont buy it",
     "rating": 4,
     "image": {
-      "small": "assets/images/iphone5s.jpg",
-      "large": "assets/images/iphone5s-large.jpg"
+      "small": "images/iphone5s.jpg",
+      "large": "images/iphone5s-large.jpg"
     }
   }
 ]

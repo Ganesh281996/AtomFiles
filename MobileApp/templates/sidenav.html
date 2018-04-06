@@ -1,0 +1,102 @@
+<!-- <md-sidenav style="border:double; border-color:red;" md-is-locked-open="$mdMedia('gt-md')"
+ md-whiteframe="4" md-disable-backdrop md-disable-backdrop md-component-id="toggleLeft" layout-margin>
+
+
+<h1>Manufacturer</h1>
+<ul ng-repeat="x in json" layout="row">
+  <md-checkbox></md-checkbox>
+  <li>{{"  "+x.specs.manufacturer}}</li>
+</ul>
+
+<h1>OS</h1>
+<ul ng-repeat="x in json" layout="row">
+  <md-checkbox></md-checkbox>
+  <li>{{"  "+x.specs.os}}</li>
+</ul>
+
+<h1>Camera</h1>
+<ul ng-repeat="x in json" layout="row">
+  <md-checkbox></md-checkbox>
+  <li>{{"  "+x.specs.camera}}</li>
+</ul>
+
+
+<h1>Manufacturer</h1>
+<md-checkbox ng-model="apple" ng-change="changeApple()"><h4>Apple</h4></md-checkbox>
+<md-checkbox><h4>Samsung</h4></md-checkbox>
+<md-checkbox><h4>Redmi</h4></md-checkbox>
+<md-checkbox><h4>Iphone</h4></md-checkbox>
+<md-checkbox><h4>HTC</h4></md-checkbox>
+
+<h1>Screen Size</h1>
+<md-checkbox><h4>16 GB</h4></md-checkbox>
+<md-checkbox><h4>32 GB</h4></md-checkbox>
+
+<h1>OS</h1>
+<md-checkbox><h4>Android</h4></md-checkbox>
+<md-checkbox><h4>IOS</h4></md-checkbox>
+<md-checkbox><h4>Windows</h4></md-checkbox>
+
+<h1>Camera</h1>
+<md-checkbox><h4>5 Mpx</h4></md-checkbox>
+<md-checkbox><h4>8 Mpx</h4></md-checkbox>
+<md-checkbox><h4>12 Mpx</h4></md-checkbox>
+<md-checkbox><h4>15 Mpx</h4></md-checkbox>
+
+
+</md-sidenav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div layout="row" style="height: 65px;" >
+
+  <section layout="column" layout="center" >
+
+    <md-sidenav class="md-sidenav-left" md-component-id="left"
+                md-disable-backdrop style="margin-top:65px;">
+
+                <h1>Manufacturer</h1>
+                <ul ng-repeat="x in json" layout="row">
+                  <md-checkbox></md-checkbox>
+                  <li>{{"  "+x.specs.manufacturer}}</li>
+                </ul>
+
+
+                <!-- <h1>Manufacturer</h1>
+                <md-checkbox><h4>Apple</h4></md-checkbox>
+                <md-checkbox><h4>Samsung</h4></md-checkbox>
+                <md-checkbox><h4>Redmi</h4></md-checkbox>
+                <md-checkbox><h4>Iphone</h4></md-checkbox>
+                <md-checkbox><h4>HTC</h4></md-checkbox> -->
+
+                <!-- <h1>Screen Size</h1>
+                <md-checkbox><h4>16 GB</h4></md-checkbox>
+                <md-checkbox><h4>32 GB</h4></md-checkbox>
+
+                <h1>OS</h1>
+                <md-checkbox><h4>Android</h4></md-checkbox>
+                <md-checkbox><h4>IOS</h4></md-checkbox>
+                <md-checkbox><h4>Windows</h4></md-checkbox>
+
+                <h1>Camera</h1>
+                <md-checkbox><h4>5 Mpx</h4></md-checkbox>
+                <md-checkbox><h4>8 Mpx</h4></md-checkbox>
+                <md-checkbox><h4>12 Mpx</h4></md-checkbox>
+                <md-checkbox><h4>15 Mpx</h4></md-checkbox> -->
+
+    </md-sidenav>
+
+  </section>
+
+</div>
