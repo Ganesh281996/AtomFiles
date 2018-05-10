@@ -15,6 +15,11 @@ $stateProvider
   templateUrl:"templates/home.html",
   controller:"homeCtrl"
 })
+// .state("imagebox",{
+//   url:"/imagebox",
+//   templateUrl:"templates/imagebox.html",
+//   controller:"imageboxCtrl"
+// })
 .state("home.dashboard",{
   url:"/dashboard",
   templateUrl:"templates/dashboard.html",
